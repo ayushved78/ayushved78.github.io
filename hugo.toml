@@ -1,0 +1,122 @@
+# Site Configuration
+baseURL = "https://ayushved78.github.io/"
+languageCode = "en-us"
+title = "Ayush Blog's"
+theme = "PaperMod"
+googleAnalytics = "G-75WGKEDCDW"
+buildFuture = true
+
+# Output Formats
+[outputs]
+  home = ['html', 'rss', 'json']
+  section = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html']
+
+# Site Parameters
+[params]
+  mainSections = ["blog", "misc"]
+  hideSummary = true
+  comments = true
+  archives = true
+  archiveSection = ["blog", "misc"]
+  defaultTheme = "dark"
+  disableThemeToggle = true
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPageNums = true
+  search = true
+  searchPlaceholder = "Search..."
+  disableScrollToTop = true
+
+  # Home Page Information
+  [params.homeInfoParams]
+  Title = ">>> data_diaries.with(\"Ayush\")"
+  Content = "### Hey! I'm Ayush\nWelcome to my blog page. This is where I track my wins, struggles, and aha moments while diving deep into data, code, and systems."
+
+  # Cover Image Parameters
+  [params.cover]
+  linkFullImages = true
+
+  # Search Settings
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+# Social Icons
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/ayushved78"
+
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:ayush.ved78@gmail.com"
+
+[[params.socialIcons]]
+  name = "twitter"
+  url = "https://x.com/ayush_singh78"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/ayushsingh78/"
+
+[[params.socialIcons]]
+  name = "kaggle"
+  url = "https://www.kaggle.com/ayushuh"
+
+# Menu Configuration
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "archive"
+  name = "Archive"
+  url = "/archive/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "posts"
+  name = "Blog"
+  url = "/blog/"
+  weight = 4
+
+[[menu.main]]
+  identifier = "misc"
+  name = "Docs"
+  url = "/misc/"
+  weight = 5
+
+[[menu.main]]
+  identifier = "shelf"
+  name = "Shelf"
+  url = "/shelf/"
+  weight = 6
+
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 7
+
+# Markup and Syntax Highlighting
+[markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  lineNos = false
+  noClasses = false
