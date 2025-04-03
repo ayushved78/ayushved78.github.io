@@ -1,5 +1,5 @@
 # Site Configuration
-baseURL = "https://ayushved78.github.io/"
+baseURL = "ayushved78.github.io/"
 languageCode = "en-us"
 title = "Ayush Blog's"
 theme = "PaperMod"
