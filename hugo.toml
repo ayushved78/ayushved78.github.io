@@ -1,0 +1,124 @@
+# Site Configuration
+baseURL = 'ayushved78.github.io/'
+languageCode = "en-us"
+title = "Ayush's Blog"
+theme = "PaperMod"
+cover_image = "images/cover.jpeg"
+googleAnalytics = "G-75WGKEDCDW"
+buildFuture = true
+
+# Output Formats
+[outputs]
+  home = ['html', 'rss', 'json']
+  section = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html']
+
+# Site Parameters
+[params]
+  mainSections = ["posts", "essay", "shelf"]
+  hideSummary = true
+  comments = true
+  archives = true
+  archiveSection = ["posts", "essay", "shelf"]
+  defaultTheme = "dark"
+  disableThemeToggle = true
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPageNums = true
+  search = true
+  searchPlaceholder = "Search..."
+  disableScrollToTop = true
+
+
+  # Home Page Information
+  [params.homeInfoParams]
+Title = "Hi, I'm Ayush 👋"
+Content = "Welcome to my digital garden — thoughts, code, and experiments."
+
+  # Social Icons
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/ayushved78"
+
+  [[params.socialIcons]]
+  name = "email"
+  url = "mailto:ayush.ved78@gmail.com"
+
+  [[params.socialIcons]]
+  name = "twitter"
+  url = "https://x.com/ayush_singh78"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/ayushsingh78/"
+
+  [[params.socialIcons]]
+  name = "kaggle"
+  url = "https://www.kaggle.com/ayushuh"
+
+  # Cover Image Parameters
+  [params.cover]
+  linkFullImages = true
+
+  # Search Settings
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1_000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = [ "title", "permalink", "summary", "content" ]
+
+# Menu Configuration
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 2
+
+[[menu.main]]
+identifier = "archive"
+name = "Archive"
+url = "/archive/"
+weight = 3
+
+[[menu.main]]
+identifier = "posts"
+name = "Blog"
+url = "/posts/"
+weight = 4
+
+[[menu.main]]
+identifier = "misc"
+name = "Misc"
+url = "/essay/"
+weight = 5
+
+[[menu.main]]
+identifier = "shelf"
+name = "Shelf"
+url = "/shelf/"
+weight = 6
+
+[[menu.main]]
+identifier = "search"
+name = "Search"
+url = "/search/"
+weight = 7
+
+# Markup and Syntax Highlighting Settings
+[markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  lineNos = false
+  noClasses = false
