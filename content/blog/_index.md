@@ -1,6 +1,6 @@
 +++
 title= "Blogs" 
 layout= "posts"
-url= "/post/"
+url= "/blog/"
 summary= "blogs"
 +++

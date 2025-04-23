@@ -5,4 +5,4 @@ title = 'Hello World'
 +++
 
 
-Test post if this all works.
+Test post if this all works from the blog.

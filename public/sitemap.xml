@@ -5,7 +5,7 @@
     <loc>//localhost:1313/</loc>
     <lastmod>2025-04-23T15:39:13+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/</loc>
+    <loc>//localhost:1313/blog/</loc>
     <lastmod>2025-04-23T15:39:13+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/essay/</loc>
@@ -14,7 +14,7 @@
     <loc>//localhost:1313/essay/hello-world/</loc>
     <lastmod>2025-04-23T15:39:13+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/hello-world/</loc>
+    <loc>//localhost:1313/blog/hello-world/</loc>
     <lastmod>2025-04-23T15:39:13+05:30</lastmod>
   </url><url>
     <loc>//localhost:1313/shelf/</loc>

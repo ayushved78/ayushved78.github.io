@@ -16,11 +16,11 @@ buildFuture = true
 
 # Site Parameters
 [params]
-  mainSections = ["posts", "essay", "shelf"]
+  mainSections = ["blog", "essay", "shelf"]
   hideSummary = true
   comments = true
   archives = true
-  archiveSection = ["posts", "essay", "shelf"]
+  archiveSection = ["blog", "essay", "shelf"]
   defaultTheme = "dark"
   disableThemeToggle = true
   ShowCodeCopyButtons = true
@@ -95,7 +95,7 @@ weight = 3
 [[menu.main]]
 identifier = "posts"
 name = "Blog"
-url = "/posts/"
+url = "/blog/"
 weight = 4
 
 [[menu.main]]
