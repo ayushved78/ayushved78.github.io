@@ -1,122 +1,99 @@
-# Site Configuration
-baseURL = 'ayushved78.github.io/'
+baseURL = "https://ayushved78.github.io/"
 languageCode = "en-us"
 title = "Ayush's Blog"
-theme = "PaperMod"
-cover_image = "images/cover.jpeg"
-googleAnalytics = "G-75WGKEDCDW"
+theme = "FixIt"
 buildFuture = true
+googleAnalytics = "G-75WGKEDCDW"
 
-# Output Formats
 [outputs]
-  home = ['html', 'rss', 'json']
-  section = ['html', 'rss']
-  taxonomy = ['html']
-  term = ['html']
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
 
-# Site Parameters
 [params]
-  mainSections = ["blog", "essay", "shelf"]
-  hideSummary = true
-  comments = true
-  archives = true
-  archiveSection = ["blog", "essay", "shelf"]
-  defaultTheme = "dark"
-  disableThemeToggle = true
+  title = "Hi, I'm Ayush 👋"
+  description = "Welcome to my digital garden — thoughts, code, and experiments."
+  defaultTheme = "dark" # dark by default
+  disableThemeToggle = true # Don't allow users to switch light/dark
+  enableReadingTime = true
+  enableShare = true
+  enableComment = true
+  enableToc = true
+  enablePostNav = true
+  enableBreadcrumb = true
   ShowCodeCopyButtons = true
-  ShowPostNavLinks = true
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPageNums = true
-  search = true
-  searchPlaceholder = "Search..."
   disableScrollToTop = true
 
+  mainSections = ["blog", "essay", "shelf"]
+  archiveSection = ["blog", "essay", "shelf"]
 
-  # Home Page Information
-  [params.homeInfoParams]
-Title = "Hi, I'm Ayush 👋"
-Content = "Welcome to my digital garden — thoughts, code, and experiments."
+  [params.search]
+    enable = true
+    placeholder = "Search..."
 
-  # Social Icons
-  [[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/ayushved78"
-
-  [[params.socialIcons]]
-  name = "email"
-  url = "mailto:ayush.ved78@gmail.com"
-
-  [[params.socialIcons]]
-  name = "twitter"
-  url = "https://x.com/ayush_singh78"
-
-  [[params.socialIcons]]
-  name = "linkedin"
-  url = "https://www.linkedin.com/in/ayushsingh78/"
-
-  [[params.socialIcons]]
-  name = "kaggle"
-  url = "https://www.kaggle.com/ayushuh"
-
-  # Cover Image Parameters
   [params.cover]
-  linkFullImages = true
+    linkFullImages = true
+    image = "images/cover.jpeg"
 
-  # Search Settings
+  [params.home]
+    rss = true
+
   [params.fuseOpts]
     isCaseSensitive = false
     shouldSort = true
     location = 0
-    distance = 1_000
+    distance = 1000
     threshold = 0.4
     minMatchCharLength = 0
-    keys = [ "title", "permalink", "summary", "content" ]
+    keys = ["title", "permalink", "summary", "content"]
 
-# Menu Configuration
-[[menu.main]]
-identifier = "home"
-name = "Home"
-url = "/"
-weight = 1
+# Social links for FixIt
+[social]
+  github = "https://github.com/ayushved78"
+  linkedin = "https://www.linkedin.com/in/ayushsingh78/"
+  twitter = "https://x.com/ayush_singh78"
+  email = "mailto:ayush.ved78@gmail.com"
+  kaggle = "https://www.kaggle.com/ayushuh"
 
+# Menu
 [[menu.main]]
-identifier = "about"
-name = "About"
-url = "/about/"
-weight = 2
-
-[[menu.main]]
-identifier = "archive"
-name = "Archive"
-url = "/archive/"
-weight = 3
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
 
 [[menu.main]]
-identifier = "posts"
-name = "Blog"
-url = "/blog/"
-weight = 4
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 2
 
 [[menu.main]]
-identifier = "misc"
-name = "Misc"
-url = "/essay/"
-weight = 5
+  identifier = "archive"
+  name = "Archive"
+  url = "/archive/"
+  weight = 3
 
 [[menu.main]]
-identifier = "shelf"
-name = "Shelf"
-url = "/shelf/"
-weight = 6
+  identifier = "posts"
+  name = "Blog"
+  url = "/blog/"
+  weight = 4
 
 [[menu.main]]
-identifier = "search"
-name = "Search"
-url = "/search/"
-weight = 7
+  identifier = "misc"
+  name = "Misc"
+  url = "/essay/"
+  weight = 5
 
-# Markup and Syntax Highlighting Settings
+[[menu.main]]
+  identifier = "shelf"
+  name = "Shelf"
+  url = "/shelf/"
+  weight = 6
+
+# Markup and Syntax Highlighting
 [markup.highlight]
   codeFences = true
   guessSyntax = true
