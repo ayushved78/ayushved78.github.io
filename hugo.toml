@@ -32,11 +32,13 @@ buildFuture = true
   searchPlaceholder = "Search..."
   disableScrollToTop = true
 
+  [params.assets]
+    favicon = "favicon.ico"
 
   # Home Page Information
   [params.homeInfoParams]
-Title = "Hi, I'm Ayush 👋"
-Content = "Welcome to my digital garden — thoughts, code, and experiments."
+  Title = "Hi, I'm Ayush 👋"
+  Content = "Welcome to my digital garden — thoughts, code, and experiments."
 
   # Social Icons
   [[params.socialIcons]]

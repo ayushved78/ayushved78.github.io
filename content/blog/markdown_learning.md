@@ -1,6 +1,6 @@
 +++
-date = '2025-05-02T19:00:16+05:30'
-draft = true
+date = '2025-05-06T19:00:16+05:30'
+draft = false
 title = 'Learn markdown'
 showToc = true
 tocOpen = true  # optional, opens ToC by default
